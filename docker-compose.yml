@@ -1,0 +1,10 @@
+version: "3.6"
+services:
+    testng-test:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: testng-test
+        volumes:
+        - ./reports:/app/reports
+
